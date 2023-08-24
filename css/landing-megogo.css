@@ -79,6 +79,7 @@ body {
 }
 
 .megogo__present-badge {
+  display: inline-block;
   padding: 0.5625rem 1.5rem;
   border-radius: 8px;
   background: #E84F35;
@@ -105,8 +106,21 @@ body {
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
 }
 
-.megogo__input-wrapper .form-group {
-  margin-bottom: 0;
+.megogo__input-wrapper .form-input {
+  padding-top: 2.285625rem;
+  height: 72px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.megogo__input-wrapper .form-input:focus {
+  box-shadow: none;
+}
+
+.megogo__input-wrapper .form-input:focus ~ .form-label, .form-input.filled ~ .form-label {
+  top: 0.723125rem;
+  font-size: 1.125rem;
+  line-height: 1;
 }
 
 .megogo__input-wrapper .btn {
@@ -114,23 +128,6 @@ body {
   font-size: 1.5rem;
   line-height: 1.3;
   width: 330px;
-}
-
-.megogo__input-wrapper .form-input {
-  height: 72px;
-}
-
-.megogo__input-wrapper .form-input:focus {
-  box-shadow: none;
-}
-
-.megogo__input-wrapper .form-label {
-  top: 1.4rem;
-}
-
-.megogo__input-wrapper .form-input:focus ~ .form-label, .form-input.filled ~ .form-label {
-  top: 0.3rem;
-  font-size: 0.875rem;
 }
 
 .megogo__benefits {
@@ -260,6 +257,10 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  body {
+    background-image: linear-gradient(270deg, #A8276F 0%, #393945 48.44%, #1C2929 100%);
+  }
+
   .megogo__main {
     padding: 1.3125rem 0 1.5rem;
   }
@@ -297,10 +298,12 @@ body {
 
   .megogo__input-wrapper .form-input {
     height: 56px;
+    font-size: 1.125rem;
+    font-weight: 400;
   }
 
-  .megogo__input-wrapper .form-label {
-    top: 0.9rem;
+  .megogo__input-wrapper .form-input:focus ~ .form-label, .form-input.filled ~ .form-label {
+    font-size: 0.875rem;
   }
 
   .megogo__input-wrapper .btn {
