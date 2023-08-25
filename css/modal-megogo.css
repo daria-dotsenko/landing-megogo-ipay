@@ -46,8 +46,8 @@
   padding: 3.6875rem 4.1875rem 0 3.5rem;
   background: linear-gradient(270deg, #A8276F 0%, #393945 48.44%, #1C2929 100%);
   overflow: hidden;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
 
 .megogo__modal .modal-body h1 {
