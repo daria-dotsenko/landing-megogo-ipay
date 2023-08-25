@@ -1,0 +1,133 @@
+.megogo__modal .modal-content {
+  border-radius: 8px;
+}
+
+.megogo__modal .modal-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 102;
+  padding: 0;
+  border: none;
+}
+
+.megogo__modal .modal-header__logo {
+  padding: 1.5625rem 0 0 1.75rem;
+}
+
+.megogo__modal .modal-header .modal-header__logo a:first-child {
+  position: relative;
+  padding-right: 0.84375rem;
+}
+
+.megogo__modal .modal-header .modal-header__logo a:last-child {
+  padding-left: 0.84375rem;
+}
+
+.megogo__modal .modal-header .modal-header__logo a:first-child::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -10px;
+  bottom: 0;
+  width: 2px;
+  height: 40px;
+  background-color: #FFFFFF;
+}
+
+.megogo__modal .modal-header .close {
+  margin: 0;
+  padding: 0.875rem;
+  outline: none;
+}
+
+.megogo__modal .modal-body {
+  padding: 3.6875rem 4.1875rem 0 3.5rem;
+  background: linear-gradient(270deg, #A8276F 0%, #393945 48.44%, #1C2929 100%);
+  overflow: hidden;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.megogo__modal .modal-body h1 {
+  font-size: 2.125rem;
+  line-height: normal;
+}
+
+.megogo__modal .modal-footer {
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+.megogo__modal .modal-footer__text {
+  font-size: 1.25rem;
+}
+
+.megogo__modal .modal-footer .list {
+  margin: 0 0 0 0.625rem;
+}
+
+.megogo__modal .modal-footer .list li {
+  color: #172A3A;
+  padding-left: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-dialog {
+    max-width: 630px;
+  }
+
+  .modal-dialog-centered {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal-dialog {
+    width: auto;
+  }
+
+  .megogo__modal .modal-header .modal-header__logo a:first-child::before {
+    top: -5px;
+    width: 1px;
+    height: 29px;
+  }
+
+  .megogo__modal .modal-header .modal-header__logo a:first-child img {
+    width: 83px;
+  }
+
+  .megogo__modal .modal-header .modal-header__logo a:last-child img {
+    width: 132px;
+  }
+
+  .megogo__modal .modal-header .modal-header__logo a:first-child {
+    padding-right: 0.625rem;
+  }
+
+  .megogo__modal .modal-header .modal-header__logo a:last-child {
+    padding-left: 0.625rem;
+  }
+
+  .megogo__modal .modal-body {
+    padding: 4.6875rem 4.1875rem 0 3rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .megogo__modal .modal-body {
+     padding: 3.6875rem 1.75rem 0 1.75rem;
+  }
+
+  .megogo__modal .modal-body h1 {
+    font-size: 1.75rem;
+  }
+
+  .megogo__modal .modal-body img {
+    width: 160px;
+  }
+
+  .megogo__modal .modal-footer__text {
+    font-size: 1.125rem;
+  }
+}
