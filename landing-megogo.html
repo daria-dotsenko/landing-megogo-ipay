@@ -65,14 +65,15 @@
   <!-- header -->
 
   <div class="main-wrapper">
-    <main class="megogo__main">
+    <main class="megogo-main">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-12">
+          <div class="col-lg-10">
             <div class="text-center mb-4">
-                <span class="megogo__present-badge text-white">
-              <img src="img/megogo/gift-24x24.png" srcset="/img/megogo/gift-24x24.png 1x, /img/megogo/gift-48x48@2x.png 2x" alt="gift">
-                  Ваш подарунок за оплати</span>
+                <span class="megogo__present-badge">
+              <img src="img/megogo/gift.png"
+                srcset="/img/megogo/gift.png 1x, /img/megogo/gift@2x.png 2x" alt="gift">
+                  <span>Ваш подарунок за оплати</span></span>
               <h1 class="text-white">Місяць крутого кіно з MEGOGO та iPay.ua</h1>
               <p class="megogo__title-text text-white">Введіть телефон та отримайте СМС з промокодом на підключення
                 передплати «Кіно+» на 1
@@ -81,58 +82,77 @@
               </p>
             </div>
           </div>
-          <div class="col-12 col-md-8">
+          <div class="col-12 col-md-8 col-lg-10 col-xl-8">
             <div class="megogo__input-wrapper">
-              <div class="row col-pad8 justify-content-center">
-                <div class="col-xl">
-                  <div class="form-group mb-3 m-xl-0">
-                    <input type="tel" class="form-control form-input filled" id="bill-tel" name="name"
-                      autocomplete="off"
-                      placeholder="+380 (00) 000 00 00" aria-required="true">
-                    <label class="control-label form-label d-sm-none" for="bill-tel">Телефон</label>
-                    <label class="control-label form-label d-sm-block d-none" for="bill-tel">Номер телефона</label>
+              <form action="">
+                <div class="row col-pad8 justify-content-center">
+                  <div class="col-lg">
+                    <div class="form-group">
+                      <input type="tel" class="form-control form-input filled" id="bill-tel" name="name"
+                        autocomplete="off"
+                        placeholder="+380 (00) 000 00 00" aria-required="true">
+                      <label class="control-label form-label d-sm-none" for="bill-tel">Телефон</label>
+                      <label class="control-label form-label d-sm-block d-none" for="bill-tel">Номер телефона</label>
+                    </div>
+                  </div>
+                  <div class="col-lg-auto">
+                    <button type="button" class="btn btn-red">Отримати промокод</button>
                   </div>
                 </div>
-                <div class="col-xl-auto">
-                  <button type="button" class="btn btn-red">Отримати промокод</button>
-                </div>
-              </div>
+              </form>
+<!--              <div class="row justify-content-center align-items-center megogo__form-sent">-->
+<!--                <div class="col-auto">-->
+<!--                  <p class="mb-0 text-white">Промокод відправлено на <strong>+380 67 676 67 67</strong></p>-->
+<!--                </div>-->
+<!--              </div>-->
             </div>
           </div>
           <div class="col-12">
-            <div class="megogo__benefits">
+            <div class="megogo-benefits">
               <div class="row col-pad8 align-items-center">
                 <div class="col-6 col-md-4 col-lg-2">
-                  <div class="megogo__benefits-item">
-                    <span class="megogo__benefits-item-title mb-sm-2 mb-lg-0 mb-xl-2">26</span>
-                    фільмових [М]-каналів за жанрами
+                  <div class="benefits-item">
+                    <span class="benefits-item__title mb-sm-2 mb-lg-0 mb-xl-2">26</span>
+                    <span>
+                      фільмових [М]-каналів за жанрами
+                    </span>
                   </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                  <div class="megogo__benefits-item">
-                    <span class="megogo__benefits-item-title mb-sm-2 mb-lg-0 mb-xl-2">11 200</span>
+                  <div class="benefits-item">
+                    <span class="benefits-item__title mb-sm-2 mb-lg-0 mb-xl-2">11 200</span>
+                    <span>
                     фільмів, серіалів, мультфільмів
+                    </span>
                   </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                  <div class="megogo__benefits-item">
-                    <span class="megogo__benefits-item-title mb-2">1 400</span>
+                  <div class="benefits-item">
+                    <span class="benefits-item__title mb-2">1 400</span>
+                    <span>
                     аудіокниг та подкастів
+                    </span>
                   </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                  <div class="megogo__benefits-item justify-content-center">
+                  <div class="benefits-item justify-content-center">
+                    <span>
                     Без реклами
+                    </span>
                   </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                  <div class="megogo__benefits-item justify-content-center">
+                  <div class="benefits-item justify-content-center">
+                    <span>
                     Доступ на 5 пристроях
+                    </span>
                   </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                  <div class="megogo__benefits-item justify-content-center">
+                  <div class="benefits-item justify-content-center">
+                    <span>
                     Якість зображення FullHD, 4К та 8K
+                    </span>
                   </div>
                 </div>
               </div>
@@ -141,32 +161,32 @@
         </div>
       </div>
       <div class="megogo-vectors">
-        <img src="img/megogo/vector-left.svg" alt="vector-left">
-        <img src="img/megogo/vector-right.svg" alt="vector-right">
+        <img src="img/megogo/vector-left.svg" alt="">
+        <img src="img/megogo/vector-right.svg" alt="">
       </div>
     </main>
 
     <!-- landing-footer -->
-    <div class="megogo__footer text-white">
+    <div class="megogo-footer text-white">
       <div class="container">
         <h2 class="text-center">Як використати промокод?</h2>
         <div class="row justify-content-center">
           <div class="col-lg-4">
-            <div class="megogo__footer-card mb-4">
-              <span class="megogo__footer-number">1</span>
-              <span class="megogo__footer-text">Увійдіть або зареєструйте новий профіль на MEGOGO</span>
+            <div class="megogo-footer__card mb-4">
+              <span class="megogo-footer__number">1</span>
+              <span class="megogo-footer__text">Увійдіть або зареєструйте новий профіль на MEGOGO</span>
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="megogo__footer-card mb-4">
-              <span class="megogo__footer-number">2</span>
-              <span class="megogo__footer-text">Активуйте промокод в розділі «Ввести промокод»</span>
+            <div class="megogo-footer__card mb-4">
+              <span class="megogo-footer__number">2</span>
+              <span class="megogo-footer__text">Активуйте промокод в розділі «Ввести промокод»</span>
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="megogo__footer-card">
-              <span class="megogo__footer-number">3</span>
-              <span class="megogo__footer-text">Отримайте доступ до передплати «Кіно+» на 1 місяць і вмикайте фільмове на MEGOGO</span>
+            <div class="megogo-footer__card">
+              <span class="megogo-footer__number">3</span>
+              <span class="megogo-footer__text">Отримайте доступ до передплати «Кіно+» на 1 місяць і вмикайте фільмове на MEGOGO</span>
             </div>
           </div>
         </div>

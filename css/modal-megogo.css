@@ -1,5 +1,7 @@
 .megogo__modal .modal-content {
+  border: 0;
   border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(39, 97, 146, 0.15);
 }
 
 .megogo__modal .modal-header {
@@ -50,13 +52,14 @@
   border-top-right-radius: 7px;
 }
 
-.megogo__modal .modal-body h1 {
+.megogo__modal .modal-body .h1 {
   font-size: 2.125rem;
   line-height: normal;
 }
 
 .megogo__modal .modal-footer {
   padding: 1rem 1.5rem 1.5rem 1.5rem;
+  border-top: 0;
 }
 
 .megogo__modal .modal-footer__text {
@@ -119,7 +122,7 @@
      padding: 3.6875rem 1.75rem 0 1.75rem;
   }
 
-  .megogo__modal .modal-body h1 {
+  .megogo__modal .modal-body .h1 {
     font-size: 1.75rem;
   }
 
